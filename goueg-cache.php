@@ -29,7 +29,13 @@ if( is_admin() ){
 
 }else{
 
-   // google_cache::initCache();
+    if( $google_settings ){
+
+        define('PLACE_ID', $google_settings['place_id']);
+        define('API_KEY', $google_settings['api_key']);
+        
+        add_action ('after_setup_theme', 'google_cache::initCache');
+    }
 
 }
 

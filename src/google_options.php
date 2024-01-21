@@ -25,7 +25,8 @@ class google_options {
 
         global $google_settings;
 
-        print_r($google_settings);
+        // print_r($google_settings['place_id']);
+        // print_r($google_settings['api_key']);
         
         echo '<div class="wrap">
                 <h2>Réglages des options google reviews</h2>
