@@ -19,6 +19,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 define( 'CACHE_PATH', plugin_dir_path( __FILE__ ) );
 
+require 'vendor/autoload.php';
+
+$google_settings = get_option('google_settings');
+
+if( is_admin() ){
+
+    $init = new google_options();
+
+}else{
+
+   // google_cache::initCache();
+
+}
+
+/*
 if( !is_admin() && isset($_GET['cache'])){
 
     function d4p_get_query_results() {
@@ -63,3 +78,6 @@ if( !is_admin() && isset($_GET['cache'])){
     add_action('init','d4p_get_query_results');
 
 }
+*/
+
+?>

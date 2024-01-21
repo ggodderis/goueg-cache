@@ -1,0 +1,15 @@
+{
+    "name": "goueg/cache",
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ggodderis",
+            "email": "goueg@orange.fr"
+        }
+    ],
+    "require": {}
+}
