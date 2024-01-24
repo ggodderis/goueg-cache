@@ -1,6 +1,6 @@
 <?php
 
-class google_cache {
+class class_google_cache {
 
     public static function initCache () {
 
@@ -19,11 +19,6 @@ class google_cache {
             set_transient('my_google_review_key', $cache , $duree_cache );
 
         }
-            $cache = json_decode($cache,true);
-            echo '<pre>';
-                print_r( $cache['result']['rating'] );
-                print_r( $cache['result']['reviews'] );
-            echo '</pre>';
 
     }
     

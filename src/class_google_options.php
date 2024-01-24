@@ -1,6 +1,6 @@
 <?php
 
-class google_options {
+class class_google_options {
 
     public function __construct(){
 
